@@ -18,7 +18,7 @@ function onlyOdd (numbers) {
 function findById (languages, id) {
 let array = languages.filter(element => {
     console.log(element.id);
-    return element.id === id;
+    return element.id != id;
   })
   return array[0]|| null;
 }
